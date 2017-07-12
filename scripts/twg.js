@@ -1,7 +1,4 @@
 var showLogin = true;
-var user = {
-    email: ''
-};
 
 $( document ).ready( function(){
     console.log( 'jq' );
@@ -31,8 +28,6 @@ $( document ).ready( function(){
 });
 
 var toggleUser = function(){
-  console.log( 'in toggleUser:', showLogin );
-  console.log( user.email );
   if( user.email!= '' && user.email != 'undefined' ){
     var userText = "<h1>Welcome back, " + user.email + "</h1>";
   }
