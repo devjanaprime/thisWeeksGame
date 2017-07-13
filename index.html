@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
     <title>This Week's Game - Do Beta Better</title>
     <link rel="stylesheet" href="vendors/bootstrap.css">
@@ -17,30 +18,23 @@
     </div>
     <div id='newCreationDiv' style="display:none">
       <h1>New Creation:</h1>
-      <input type='text' placeholder="name" />
+      <p><input type='text' placeholder="name" id="name" /></p>
+      <p><input type='text' placeholder="description" id="description"/></p>
+      <p><input type='text' placeholder="imageUrl" id="imageUrl"/></p>
+      <p><input type='text' placeholder="pc dowload url" id="pcUrl"/></p>
+      <p><input type='text' placeholder="mac dowload url" id="macUrl"/></p>
+      <p><input type='text' placeholder="android dowload url" id="androidUrl"/></p>
+      <p><button id='addCreation'>Create!</button></p>
     </div>
-    <div id='myCreationsDiv'>
-        <h1>My Games</h1>
-        <div id='game0Div'>
-          <h2>Game 1</h2>
-          <p>
-            <img src='https://www.fillmurray.com/256/256' />
-          </p>
-          <p>
-            Description
-          </p>
-          <p>
-            <a>PC</a> <a>Mac</a> <a>Android</a>
-          </p>
-        </div>
-      </div>
-    </div id='mySubscriptionsDiv'>
+    <div id='myCreationsDiv' style="display:none">
+    </div>
+    <div id='mySubscriptionsDiv' style="display:none">
       <div id='subsDiv'>
         <h1>My Subscriptions</h1>
         <div>
           <h2>Game 2</h2>
           <p>
-            <img src='https://www.fillmurray.com/256/256' />
+            <img src='https://www.fillmurray.com/1920/1080' width='93%'/>
           </p>
           <p>
             Description

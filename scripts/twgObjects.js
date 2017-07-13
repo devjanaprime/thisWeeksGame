@@ -1,7 +1,8 @@
-var Creation = function( creator, description, id, imageUrl, pcUrl, macUrl, androidUrl ){
+var Creation = function( creator, description, id, imageUrl, name, pcUrl, macUrl, androidUrl ){
   this.creator = creator;
   this.description = description;
   this.id = id;
+  this.name = name;
   this.imageUrl = imageUrl;
   this.pcUrl = pcUrl;
   this.macUrl = macUrl;
@@ -11,6 +12,7 @@ var Creation = function( creator, description, id, imageUrl, pcUrl, macUrl, andr
 
 var User = function( email ){
     this.email = email;
+    this.creator = true;
     this.addCreation = function( newCreation ){
       console.log( 'adding creation');
       this.creations.push( newCreation );
@@ -18,8 +20,9 @@ var User = function( email ){
     this.addSubscription = function( newSubscription ){
       console.log( 'adding subscription');
       this.subscriptions.push( newSubscription );
-    }; // end addSubscription 
+    }; // end addSubscription
     return this;
 }; // end User
 
 var user = new User( '' );
+var creations = [];
